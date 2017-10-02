@@ -1,0 +1,5 @@
+# Ignore Intellij idea folder
+.idea/
+
+# Ignore Maven build folder
+target/

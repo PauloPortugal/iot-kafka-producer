@@ -1,0 +1,23 @@
+server:
+  applicationConnectors:
+  - type: http
+    port: 8080
+  adminConnectors:
+  - type: http
+    port: 8091
+
+logging:
+  level: INFO
+  loggers:
+    com.pmonteiro: DEBUG
+
+swagger:
+  includeSwaggerResource: true
+  resourcePackage: com.pmonteiro.iot.resources
+
+kafka:
+  server: 127.0.0.1:9092
+  topic: iot-plants
+  acks: 1
+  retries: 3
+  linger: 1
